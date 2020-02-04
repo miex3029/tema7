@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -14,9 +15,9 @@
         }
 
         #to {
-            height: 100px;
-            width: 100px;
-            line-height: 100px;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
             border-radius: 50%;
             text-align: center;
             background-color: mediumvioletred;
@@ -40,7 +41,10 @@
     <script>
         let etURL = `http://mabe-kea.dk/E19/pics/frog.png`;
         let toURL = `http://mabe-kea.dk/E19/pics/pig.png`;
+        let foxURL = `http://mabe-kea.dk/E19/pics/fox.png`;
+
         document.querySelector("#et").innerHTML = `<img src=${etURL} alt="frog">`;
         document.querySelector("#to").innerHTML = `<img src=${toURL} alt="pig">`;
+        document.querySelector("#to").innerHTML += `<img src=${foxURL} alt="fox">`;
     </script>
 </body></html>
