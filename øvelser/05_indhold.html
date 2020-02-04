@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        #et {
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: mediumseagreen;
+        }
+
+        #to {
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: mediumvioletred;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="et">
+
+    </div>
+
+
+    <div id="to">
+
+    </div>
+
+    <script>
+        let etURL = `http://mabe-kea.dk/E19/pics/frog.png`;
+        let toURL = `http://mabe-kea.dk/E19/pics/pig.png`;
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            console.log("start");
+
+            document.querySelector("#et").innerHTML = `<img src=${etURL} alt="frog">`;
+            document.querySelector("#to").innerHTML = `<img src=${toURL} alt="pig">`;
+
+        }
+    </script>
+</body></html>
