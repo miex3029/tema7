@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -7,6 +8,23 @@
 </head>
 
 <body>
-    <script></script>
 
-</body></html>
+    <ul id="display"></ul>
+
+    <script>
+        let playliste = ["Run", "Money Power Glory", "Sunburn", "Shameless", "This Is What Makes Us Girls", "I'm A Mess", "Give Me Love", "Sidewalks", "Hope Is A Dangerous Thing For A Woman Like Me To Have - But I Have It", "Same Mistakes"];
+
+        playliste.forEach(song => {
+
+
+            let element = document.createElement("li");
+            let mySong = document.createTextNode(song);
+            element.appendChild(mySong);
+            document.querySelector("#display").appendChild(element);
+        })
+
+    </script>
+
+</body>
+
+</html>
