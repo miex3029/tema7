@@ -25,21 +25,43 @@
     //    let dyr ={"dyr":"gris","type":"pattedyr","levested":"svinefarme"}
 
 
-    document.addEventListener("DOMContentLoaded", hentData);
+    document.addEventListener("DOMContentLoaded", visDyr);
 
-    let dyr = []
+    let dyr = [{
+            "Race": "Gris",
+            "Type": "Pattedyr",
+            "Levested": "Svinefarm",
+            "Foto": "http://mabe-kea.dk/E19/pics/pig.png"
+        },
+        {
+            "Race": "Frø",
+            "Type": "Amfibie",
+            "Levested": "Vandhul",
+            "Foto": "http://mabe-kea.dk/E19/pics/frog.png"
+        },
+        {
+            "Race": "Ræv",
+            "Type": "Pattedyr",
+            "Levested": "Skov",
+            "Foto": "http://mabe-kea.dk/E19/pics/fox.png"
+        },
+        {
+            "Race": "Sild",
+            "Type": "Fisk",
+            "Levested": "Havet",
+            "Foto": "http://mabe-kea.dk/E19/pics/sild.jpg"
+        },
+        {
+            "Race": "Krokodille",
+            "Type": "Krybdyr",
+            "Levested": "Floden",
+            "Foto": "http://mabe-kea.dk/E19/pics/kroko.jpg"
+        }
 
-    async function hentData() {
-        const response = await fetch("06_visalledyr.json");
-        console.log(response);
-        dyr = await response.json();
-        console.log(dyr);
-        visDyr();
-    }
 
-    //start
-    //hentDyrData
-    //visDyr
+
+
+    ]
 
     console.log(dyr);
 
